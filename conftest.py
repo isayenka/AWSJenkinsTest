@@ -9,6 +9,5 @@ def chrome_browser():
     chrome_options.add_argument('--disable-dev-shm-usage')
     chrome_options.add_argument('--headless')
     browser = webdriver.Chrome(chrome_options=chrome_options)
-    browser = webdriver.Chrome('/usr/local/bin/chromedriver')
     browser.maximize_window()
     return browser
